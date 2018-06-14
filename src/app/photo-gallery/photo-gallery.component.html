@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <img [src]="photoUrl" [@photoState]="position" class="rounded">
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button (click)="changePosition('move')" class="btn btn-sm btn-info">Translate</button>
+        <button (click)="changePosition('spin')" class="btn btn-sm btn-info">Rotate</button>
+        <button (click)="changePosition('enlarge')" class="btn btn-sm btn-info">Scale</button>
+        <button (click)="changePosition(null)" class="btn btn-sm btn-info">Reset</button>
+      </div>
+    </div>
+  </div>
+</div>
